@@ -38,17 +38,17 @@ fn main() {
 
     let args: Vec<String> = env::args().collect();
     if args.len() <= 1 {
-        println!("{err} command not found: \"\"");
+        eprintln!("{err} command not found: \"\"");
         exit(NOTFOUND);
     }
 
     let cmd_name = &args[1];
     let cmd_args = &args[2..].join(" ");
-    println!("{err} command not found: {} {cmd_args}", cmd_name.red());
+    eprintln!("{err} command not found: {} {cmd_args}", cmd_name.red());
 
     let executables = find_executables();
     if let Some(sugg) = executables.suggest_with_dist(cmd_name, Some(2)) {
-        println!("{:>6} Did you mean \"{}\"?", "==>".green(), sugg.green());
+        eprintln!("{:>6} Did you mean \"{}\"?", "==>".green(), sugg.green());
     }
 
     // Always exits with 127 since this binary is supposed
