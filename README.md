@@ -14,7 +14,7 @@ Typo correction for shell commands when command not found
      exec suggest-command-not-found $@
    }
    ```
-   If you are using Bash, update your `~/.bash_profile`:
+   Or update your `~/.bash_profile` if you are using Bash:
    ```bash
    command_not_found_handle() {
      exec suggest-command-not-found $@
