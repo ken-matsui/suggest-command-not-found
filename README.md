@@ -2,6 +2,8 @@
 
 Typo correction for shell commands when command not found
 
+<img width="306" alt="ScreenShot" src="https://user-images.githubusercontent.com/26405363/234446161-5711b48c-7973-44b9-bb9e-f091baab1d8d.png">
+
 ## Usage
 
 1. Install `suggest-command-not-found`
