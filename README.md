@@ -1,4 +1,4 @@
-# suggest-command-not-found
+# suggest-command-not-found [![crates.io version](https://img.shields.io/crates/v/suggest-command-not-found.svg)](https://crates.io/crates/suggest-command-not-found) [![crates.io downloads](https://img.shields.io/crates/d/suggest-command-not-found.svg)](https://crates.io/crates/suggest-command-not-found)
 
 Typo correction for shell commands when command not found
 
