@@ -47,7 +47,7 @@ fn main() {
     eprintln!("{err} command not found: {} {cmd_args}", cmd_name.red());
 
     let executables = find_executables();
-    if let Some(sugg) = executables.suggest_with_dist(cmd_name, Some(2)) {
+    if let Some(sugg) = executables.suggest_by(cmd_name, 2) {
         eprintln!("{:>6} Did you mean \"{}\"?", "==>".green(), sugg.green());
     }
 

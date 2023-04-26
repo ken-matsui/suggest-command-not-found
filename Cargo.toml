@@ -12,4 +12,4 @@ documentation = "https://docs.rs/suggest-command-not-found"
 
 [dependencies]
 colored = "2"
-suggest = "0.4"
+suggest = "0.5"
