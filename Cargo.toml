@@ -1,9 +1,9 @@
 [package]
 name = "suggest-command-not-found"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Ken Matsui <26405363+ken-matsui@users.noreply.github.com>"]
-description = "Typo correction for shell commands when command not found"
+description = "Typo correction for not-found shell commands"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/ken-matsui/suggest-command-not-found/"
