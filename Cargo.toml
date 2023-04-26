@@ -1,0 +1,15 @@
+[package]
+name = "suggest-command-not-found"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ken Matsui <26405363+ken-matsui@users.noreply.github.com>"]
+description = "Typo correction for shell commands when command not found"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ken-matsui/suggest-command-not-found/"
+homepage = "https://github.com/ken-matsui/suggest-command-not-found#readme"
+documentation = "https://docs.rs/suggest-command-not-found"
+
+[dependencies]
+colored = "2"
+suggest = "0.4"
