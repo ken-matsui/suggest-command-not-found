@@ -13,13 +13,21 @@ Typo correction for not-found shell commands
 2. Add `command_not_found_handler` to your `~/.zshrc`
    ```zsh
    command_not_found_handler() {
-     exec suggest-command-not-found $@
+     if command -v suggest-command-not-found &> /dev/null; then
+       exec suggest-command-not-found $@
+     else
+       echo "zsh: command not found: $@"
+     fi
    }
    ```
    Or update your `~/.bash_profile` if you are using Bash:
    ```bash
    command_not_found_handle() {
-     exec suggest-command-not-found $@
+     if command -v suggest-command-not-found &> /dev/null; then
+       exec suggest-command-not-found $@
+     else
+       echo "bash: command not found: $@"
+     fi
    }
    ```
 3. Make a typo
