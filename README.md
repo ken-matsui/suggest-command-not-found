@@ -42,3 +42,18 @@ Typo correction for not-found shell commands
    $ echo $?
    127
    ```
+
+## Publish
+
+### [GitHub Releases](https://github.com/ken-matsui/suggest-command-not-found/tags)
+
+```bash
+$ git tag v0.1.0
+$ git push origin v0.1.0
+```
+
+### [crates.io](https://crates.io/)
+
+```bash
+$ cargo publish
+```
